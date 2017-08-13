@@ -1,2 +1,3 @@
 # Sanitise-KB
 Script to cleanse an individual KB article from Configuration Manager. Removes from update group, update package and creates an article filter in any associated ADRs.
+This was inspired where a nubmer of customers were hit by KB3203467 and we wanted a way of removing this from multiple customers. In addition, some customers found that even though they had stripped the KB article from the Software update group, it would return as they and Automatic deployment rule in place. The script also creates an Article filter or appends to an existing article filter to ensure that the KB article is not re-applied. It identifies the associated product(s) to the article and only applies the filter on ADRs that use that\those product(s).
